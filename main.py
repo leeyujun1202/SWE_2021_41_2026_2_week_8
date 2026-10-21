@@ -13,8 +13,13 @@ def sum_of_squares_of_even(even_int_list: List[int]) -> int:
     """
     Computes the sum of the squares of all even numbers.
     """
-    # TODO: Implement sum_of_squares_of_even
-    pass
+    total = 0
+
+    for number in even_int_list:
+        squared_number = number * number
+        total = total + squared_number
+
+    return total
 
 
 def main():
